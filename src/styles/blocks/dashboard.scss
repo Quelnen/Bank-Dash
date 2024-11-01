@@ -1,0 +1,51 @@
+.dashboard {
+  position: absolute;
+  top: 0%;
+  z-index: 3;
+}
+
+.dashboard__item {
+  padding: 25px 42px 25px 44px;
+  background-color: #eaedf5;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  & svg{
+    margin-right: 25px; 
+}
+
+  &:hover {
+    & a {
+      color: #000000;
+
+      &:active {
+        color: #756565;
+      }
+    }
+
+    & svg > path, svg > g > path {
+      fill: #000000;
+
+      &:active {
+        color: #756565;
+      }
+    }
+  }
+}
+.dashboard__item--active{
+    & svg > path {
+        fill:$blue;
+
+    }
+
+    .dashboard__link{
+        color:$blue;
+    }
+}
+
+.dashboard__link {
+  font-family: "Inter", sans-serif;
+  color: #b1b1b1;
+  @include font-change(500, 18px, 21px);
+}

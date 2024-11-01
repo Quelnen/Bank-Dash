@@ -1,0 +1,34 @@
+.page-main{
+    width: 100%;
+    background-color: #f5f7fa;
+    padding: 25px 25px 0;
+}
+
+.page-main__wrapper{
+    min-width: 375px;
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.hide-bar-tablet{
+    display: none;
+}
+
+.main-header__link{
+    justify-self: start;
+}
+
+
+@media (min-width: $tablet) and (max-width:1440px) {
+    .page-main__wrapper{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    .hide-bar-tablet{
+        display: block;
+    }
+}
